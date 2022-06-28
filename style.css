@@ -4,11 +4,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body{
     background-color: #121212;
 }
 
 /*navgation*/
-li, a, button {
+li, a, button, div {
     font-family: "Roboto", arial, sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -52,4 +55,42 @@ header {
 
 .contact:hover {
     background-color: rgba(0, 136,169,0.8);
+}
+
+/*Dropdown menu*/
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown_menu {
+    position: absolute;
+    left: 0;
+    top: calc(100% + .25rem);
+    background-color: #5f6368;
+    padding: .7rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0px rgb(169, 169, 169);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown.active > .contact + .dropdown_menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 2rem;
+}
+
+.dropdown-links {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
 }

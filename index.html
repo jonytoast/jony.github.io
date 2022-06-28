@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!--Navagation-->
@@ -20,7 +21,21 @@
                 <li><a href="#"></a></li>-->
             </ul>
         </nav>
-        <a class="cta" href="#"><button class="contact">Contact</button></a>
+        <!--Dropdown menu-->
+        <div class="dropdown" data-dropdown>
+            <button class="contact" data-dropdown-button>Contact</button>
+            <div class="dropdown_menu contact-grid">
+                <div>
+                    <div class="dropdown-heading">Find Me On</div>
+                    <div class="dropdown-links">
+                        <a href="#" class="link">All</a>
+                        <a href="#" class="link">All</a>
+                        <a href="#" class="link">All</a>
+                        <a href="#" class="link">All</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 </body>
 </html>
