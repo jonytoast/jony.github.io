@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@1&family=Roboto+Slab:wght@500&family=Roboto:wght@300;500&family=Space+Mono&family=Work+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
 /*Universal tags*/
 * {
     box-sizing: border-box;
@@ -11,7 +13,7 @@ body{
 }
 
 /*navgation*/
-li, a, button, div {
+li, a, button, p {
     font-family: "Roboto", arial, sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -94,3 +96,28 @@ header {
     flex-direction: column;
     gap: .25rem;
 }
+
+/*Name heading*/
+
+.grid-heading {
+    margin: 15rem auto;
+    width: min(90%, 75rem);
+    display: grid;
+    place-items: center;
+}
+
+#name, .i-am {
+    color: #fff;
+    white-space: nowrap;
+    z-index: 9;
+    font-family: 'Yellowtail', cursive;
+}
+
+.i-am {
+   font-size: 2vw; 
+}
+
+#name {
+    font-size: 4vw;
+}
+
