@@ -13,7 +13,7 @@ body{
 }
 
 /*navgation*/
-li, a, button, p {
+li, a, button  {
     font-family: "Roboto", arial, sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -100,10 +100,13 @@ header {
 /*Name heading*/
 
 .grid-heading {
-    margin: 15rem auto;
-    width: min(90%, 75rem);
-    display: grid;
-    place-items: center;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 210px 100px;
+
 }
 
 #name, .i-am {
@@ -114,10 +117,72 @@ header {
 }
 
 .i-am {
-   font-size: 2vw; 
+   font-size: 60px; 
 }
 
 #name {
-    font-size: 4vw;
+    font-size: 100px;
+}
+
+/*Projects scetion*/
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    border-radius: 4px;
+    background-color: #fff;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: .3s;
+}
+
+.project-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    /*border: 6px solid #ddd;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 20px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;*/
+}
+
+.header-text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+.img-text {
+    font-family: "Roboto", arial, sans-serif;
+    padding-top: 20px;
+}
+
+.img-text p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.project-content:hover {
+    background-color: #e84393;
+    color: #fff;
 }
 
