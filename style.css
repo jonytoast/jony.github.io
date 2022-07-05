@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@1&family=Roboto+Slab:wght@500&family=Roboto:wght@300;500&family=Space+Mono&family=Work+Sans:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 /*Universal tags*/
 * {
     box-sizing: border-box;
@@ -105,7 +105,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 210px 100px;
+    padding: 280px 100px;
 
 }
 
@@ -117,11 +117,11 @@ header {
 }
 
 .i-am {
-   font-size: 60px; 
+   font-size: 4vw; 
 }
 
 #name {
-    font-size: 100px;
+    font-size: 6vw;
 }
 
 /*Projects scetion*/
@@ -131,6 +131,10 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding-top: 100px;
+    /*margin: 50px 25px;
+    padding: 50px 25px;*/
+    
 }
 
 .project-content {
@@ -153,9 +157,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
+   /* width: 80px;
     height: 80px;
-    /*border: 6px solid #ddd;
+    border: 6px solid #ddd;
     border-radius: 50%;
     margin-bottom: 10px;
     padding: 20px;
@@ -186,3 +190,15 @@ header {
     color: #fff;
 }
 
+.project-title {
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+}
+
+.project-title h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 500;
+    font-size: 50px;
+}
